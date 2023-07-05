@@ -3,8 +3,11 @@ the values entered by the user (except for the 0) in ascending order (The list i
 i=1
 list=[]
 while(i!=0):
-    list.append(i)
     i=int(input())
+    if(i!=0):
+        list.append(i)
+    else:
+        break
 list.sort()
 print(list)
     
